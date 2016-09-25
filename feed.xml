@@ -6,8 +6,8 @@
 </description>
     <link>jsummer.github.io/</link>
     <atom:link href="jsummer.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Sep 2016 17:45:53 +0800</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 17:45:53 +0800</lastBuildDate>
+    <pubDate>Sun, 25 Sep 2016 19:37:29 +0800</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2016 19:37:29 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -15,7 +15,6 @@
         <description>&lt;p&gt;作为一名coder，怎么能没有一个个人博客呢？😄&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'jsummer'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
 </description>
         <pubDate>Thu, 22 Sep 2016 09:30:07 +0800</pubDate>
         <link>jsummer.github.io/jekyll/update/2016/09/22/first-post/</link>
