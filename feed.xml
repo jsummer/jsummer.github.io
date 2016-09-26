@@ -6,9 +6,228 @@
 </description>
     <link>jsummer.github.io/</link>
     <atom:link href="jsummer.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Sep 2016 22:14:27 +0800</pubDate>
-    <lastBuildDate>Sun, 25 Sep 2016 22:14:27 +0800</lastBuildDate>
+    <pubDate>Mon, 26 Sep 2016 20:42:37 +0800</pubDate>
+    <lastBuildDate>Mon, 26 Sep 2016 20:42:37 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>事件对象－Javascript高级程序设计</title>
+        <description>&lt;p&gt;在触发dom上某个事件时，会产生一个事件对象event&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;属性/方法&lt;/th&gt;
+      &lt;th&gt;类型&lt;/th&gt;
+      &lt;th&gt;读/写&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bubbles&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;表明事件是否冒泡&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cancelable&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;表明是否可以取消事件的默认行为&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;currentTarget&lt;/td&gt;
+      &lt;td&gt;Element&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;其他事件处理程序正在处理事件的那个元素&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;defaultPrevented&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;为true表示已经调用了preventDefault()(DOM3级事件中新增)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;detail&lt;/td&gt;
+      &lt;td&gt;Integer&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;与事件相关的细节信息&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;eventPhase&lt;/td&gt;
+      &lt;td&gt;Integer&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;调用事件处理程序的阶段:1表示捕获阶段，2表示“处于目标”，3表示冒泡阶段&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;preventDefault()&lt;/td&gt;
+      &lt;td&gt;Function&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;取消事件的默认行为。如果cancelable是true，则可以使用这个方法&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;stopImmediatePropagation()&lt;/td&gt;
+      &lt;td&gt;Function&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;取消事件的进一步捕获或冒泡，同时阻止任何事件处理程序被调用(dom3级事件中新增)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;stopProgapation()&lt;/td&gt;
+      &lt;td&gt;Function&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;取消事件进一步捕获或冒泡。如果bubbles为true，则可以使用这个方法&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;target&lt;/td&gt;
+      &lt;td&gt;Element&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;事件的目标&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;trusted&lt;/td&gt;
+      &lt;td&gt;Boolean&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;为true表示事件是油浏览器生成的，为false表示事件是由开发人员通过javascript创建的(DOM3事件新增)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;type&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;被触发事件的类型&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;view&lt;/td&gt;
+      &lt;td&gt;AtractView&lt;/td&gt;
+      &lt;td&gt;只读&lt;/td&gt;
+      &lt;td&gt;与事件关联的抽象视图。等同于发生事件的window对象&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;事件类型&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;UI(User Interface,用户界面)事件，当用户与页面上的元素交互时触发&lt;/li&gt;
+  &lt;li&gt;焦点事件，当元素失去或获得焦点时触发&lt;/li&gt;
+  &lt;li&gt;鼠标事件，当用户通过鼠标在页面上执行操作时触发&lt;/li&gt;
+  &lt;li&gt;滚轮事件，当使用鼠标滚轮(或类似设备)时触发&lt;/li&gt;
+  &lt;li&gt;文本事件，当在文档中输入文本时触发&lt;/li&gt;
+  &lt;li&gt;键盘事件，当用户通过键盘在页面上执行操作时触发&lt;/li&gt;
+  &lt;li&gt;合成事件，当为IME(Input Method Editor,输入法编辑器)输入字符时触发&lt;/li&gt;
+  &lt;li&gt;变动事件，当底层dom结构发生变化时触发&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ui&quot;&gt;UI事件&lt;/h3&gt;
+
+&lt;p&gt;load：当页面完全加载后在window上面触发，当所有框架都加载完毕时在框架集上面触发，当图像加载完毕时在&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img /&amp;gt;&lt;/code&gt;元素上触发，或者当嵌入的内容加载完毕时在&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;object&amp;gt;&lt;/code&gt;元素上面触发&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;EventUtil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;load&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Loaded&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;unload：当页面完全卸载后在window上面触发，当所有框架都卸载完毕时在框架集上面触发，或者当嵌入的元素卸载完毕后在&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;object&amp;gt;&lt;/code&gt;元素上面触发&lt;/p&gt;
+
+&lt;p&gt;abort：在用户停止下载过程时，如果嵌入的内容没有加载完，则在&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;object&amp;gt;&lt;/code&gt;元素上面触发&lt;/p&gt;
+
+&lt;p&gt;error：当发生Javascript错误时在window上面触发，或者当有一或多个框架无法加载时在框架集上面触发&lt;/p&gt;
+
+&lt;p&gt;select：当用户选择文本框（&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;或&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt;）中的一或多个字符时触发。&lt;/p&gt;
+
+&lt;p&gt;resize：当窗口或框架的大小变化时在window或框架上面触发&lt;/p&gt;
+
+&lt;p&gt;scroll：当用户滚动滚动条的元素中的内容时，在该元素上面触发。&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt;元素中包含所加载页面的滚动条&lt;/p&gt;
+
+&lt;p&gt;要确定浏览器是否支持DOM2级事件规定的HTML事件，代码如下&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var isSupported = document.implementation.hasFeature(&quot;HTMLEvents&quot;,&quot;2.0&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;确定浏览器是否支持DOM3级事件规定的HTML事件，代码如下&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var isSupported = document.implementation.hasFeature(&quot;HTMLEvents&quot;,&quot;3.0&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;焦点事件&lt;/h3&gt;
+
+&lt;p&gt;焦点事件会在页面元素获得或失去焦点时触发。利用这些事件并与document.hasFoucs()方法及document.activeElement属性配合，可以知晓用户在页面上的行踪。&lt;/p&gt;
+
+&lt;p&gt;blur：在元素失去焦点时触发。这个事件不会冒泡，所有浏览器都支持它&lt;/p&gt;
+
+&lt;p&gt;focus：在元素获得焦点时触发。这个事件不会冒泡，所有浏览器都支持它&lt;/p&gt;
+
+&lt;p&gt;focusin：在元素获得焦点时触发。这个事件与HTML事件focus等价，但它冒泡。支持这个事件的浏览器有IE5.5+,Safari5.1+,Opera11.5+和Chrome&lt;/p&gt;
+
+&lt;p&gt;focusout：在元素失去焦点时触发。这个事件是HTML事件blur的通用版本。支持这个事件的浏览器有IE5.5+,Safari5.1+,Opera11.5+和Chrome&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;鼠标与滚轮事件&lt;/h3&gt;
+
+&lt;p&gt;click：单击鼠标或按下回车时触发。
+dbclick：双击鼠标按钮时触发。
+mousedown：按下任意鼠标按钮时触发
+mouseup：释放鼠标按钮时触发
+mouseenter：在鼠标光标从元素外部首次移动到元素范围之内时触发。这个事件不冒泡，而且在光标移到后代元素上不会触发
+mouseleave：在位于元素上方的鼠标光标移到元素之外触发。这个事件不冒泡，，而且在光标移到后代元素上不会触发
+mousemove：当鼠标指针在元素内部移动时重复的触发。
+mouseout：在鼠标指针位于一个元素的正上方，然后用户将其移入另一个元素时触发。又移入的另外一个元素可能位于前一个元素的外部，也可能是这个元素的子元素。
+mouseover：当鼠标指针位于一个元素外部，然后用户将其首次移入到另一个元素边界之内时触发。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;客户区坐标位置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;clientX/clientY   (相对于浏览器窗口)&lt;/p&gt;
+
+&lt;p&gt;它们的值表示事件发生时鼠标指针在视口中的水平坐标和垂直坐标
+不包括页面滚动的距离，因此这个值并不表示鼠标在页面上的位置&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;页面坐标位置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;pageX/pageY       (相对于页面)&lt;/p&gt;
+
+&lt;p&gt;它们的值表示鼠标光标在页面中的位置，坐标是从页面本身而非视口的左边和顶边计算的&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;屏幕坐标位置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;screenX/screenY   (相对于电脑屏幕)&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;内存和性能&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;事件委托&lt;/h3&gt;
+
+&lt;p&gt;对“事件处理程序过多”问题的解决方案就是事件委托。事件委托利用了事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+EventUtil.addHandler(list,'click',(e)=&amp;gt;{
+	let target = EventUtil.getTarget(e);
+	switch(target.id) {
+		case 'mouse1':
+			console.log(1);
+			break;
+		case 'mouse2':
+			console.log(2);
+			break;
+		case 'mouse3':
+			console.log(3);
+			break;
+	}
+})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;优点：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;document对象很快就可以访问，而且可以在页面生命周期的任何时点上为它添加事件处理程序（无需等待DOMContentLoaded或load事件）。换句话说只要可单击的元素呈现在页面上，就可以立即具备适当功能。&lt;/li&gt;
+  &lt;li&gt;在页面中设置事件处理程序所需的时间更少。只添加一个事件处理程序所需的DOM引用更少，所花的时间也更少。&lt;/li&gt;
+  &lt;li&gt;整个页面占用的内存空间更少，能够提升整体性能。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 26 Sep 2016 20:36:07 +0800</pubDate>
+        <link>jsummer.github.io/javascript/2016/09/26/event-object/</link>
+        <guid isPermaLink="true">jsummer.github.io/javascript/2016/09/26/event-object/</guid>
+        
+        
+        <category>javascript</category>
+        
+      </item>
     
       <item>
         <title>我的第一篇jekyll博客</title>
